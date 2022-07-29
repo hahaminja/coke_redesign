@@ -1,0 +1,241 @@
+:root {
+  /*  색상  */
+  --bg-white-color: #f9f9f9;
+  --red-color: #f5000a;
+  --purple-color: #af2c8c;
+  --white-color: #f9f9f9;
+  --black-color: #281713;
+  --gray-color: #b7b7b7;
+
+  /*  폰트사이즈 추가예정  */
+  --text-2xl:64px;
+  --text-xl:45px;
+  --text-lg:32px;
+  --text-md:22px;
+  --text-sm:16px;
+  --text-sx:14px;
+  --text-ss:12px;
+  /*  사이즈  */
+  --top-size: 120px;
+}
+img{
+  display: block;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/* 라이브러리 */
+.banner_title {
+  font-family: "Shrikhand", cursive;
+}
+
+.con-min-width {
+  min-width: 1200px;
+}
+.con {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 스타일 */
+/* top_bar */
+.top_bar {
+  background-color: var(--red-color);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.top_menu_box {
+  color: var(--white-color);
+  height: var(--top-size);
+}
+.top_menu_box ul li:hover a{
+  color:var(--black-color);
+  transition: 0.4s;
+}
+/* slider-wrap st */
+.slider-wrap{
+  margin-top: var(--top-size);
+}
+.slider-wrap .banner{
+  position: relative;
+}
+.slider-wrap .banner .text-box{
+  position: absolute;
+  top: 30%;
+  left:15%;
+}
+
+.slider-wrap .banner.banner_3 > .text-box{
+  top: 0;
+  right:0;
+  background-color: #efefef;
+  text-align: end;
+}
+
+.slider-wrap .banner .text-box .banner_title{
+  font-size: 46px;
+  line-height:50px;
+  color:var(--white-color);
+  letter-spacing: 0.8px;
+}
+.slider-wrap .banner .text-box .banner_body{
+  font-size: var(--text-sx);
+  display: block;
+  margin-bottom: 40px;
+  color:var(--white-color);
+  letter-spacing: 0.3px;
+}
+.slider-wrap .banner .text-box .banner_btn{
+  display: block;
+  font-size: var(--text-sx);
+  padding:5px 15px;
+  color:var(--white-color);
+  border:1px solid var(--red-color);
+  background-color:var(--red-color);
+  border-radius: 7px;
+}
+.slider-wrap .banner .text-box .banner_btn p{ 
+  display: inline-block;
+  margin-right:5px ;
+}
+.slider-wrap .banner .text-box .banner_btn i{
+  transition: 0.3s;
+}
+.slider-wrap .banner .text-box .banner_btn:hover i{
+  transform: translateX(5px);
+}
+/* 배너 3. 4번 */
+.slider-wrap .banner_3 .text-box .banner_title ,
+.slider-wrap .banner_3 .text-box .banner_body,
+.slider-wrap .banner_4 .text-box .banner_title,
+.slider-wrap .banner_4 .text-box .banner_body{
+  color:var(--black-color) ;
+}
+
+/* banner_slick */
+.slider-wrap .slick-dots{
+  bottom: 40px;
+}
+.slider-wrap .slick-dots li button:before{
+  font-size: 15px;
+  color:var(--white-color);
+}
+
+/* arrival_list st */
+.arrival_list{
+  margin-top: 330px;
+}
+.arrival_list > h1,
+.brands > h1{
+  font-size: var(--text-2xl);
+  color:var(--purple-color);
+  line-height: 70px;
+}
+.arrival_list > span,
+.brands > span{
+  font-size: var(--text-sx);
+}
+
+.list_slide_wrap .content{
+  padding:0 20px;
+}
+.list_slide_wrap .content .img-box img{
+  transition: 0.3s;
+}
+.list_slide_wrap .content .img-box img:hover{
+  transform: scale(1.2);
+}
+
+.list_slide_wrap .content .text-box{
+  margin-top: 50px;
+}
+.list_slide_wrap .content .text-box p:nth-child(1){
+  font-size: var(--text-sm);
+  color:var(--red-color);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.list_slide_wrap .content .text-box h2{
+  font-size: var(--text-lg);
+  color:var(--black-color);
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing:0.8px;
+}
+.list_slide_wrap .content .text-box .price_shopNow{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.list_slide_wrap .content .text-box .price_shopNow span{
+  font-size: var(--text-md);
+  color:var(--gray-color);
+  font-weight: 500;
+}
+.list_slide_wrap .content .text-box .price_shopNow p{
+  display: inline-block;
+  font-size: var(--text-sx);
+  color:var(--red-color);
+  border: 1.8px solid var(--red-color);
+  padding:4px 10px;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+.list_slide_wrap .content .text-box .price_shopNow p:hover{
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+/* brands st */
+.brands__items{
+  height: 570px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap:30px;
+}
+.brands__items .brands__item{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.brands__items .brands__item .title{
+  font-size: var(--text-xl);
+  color:var(--white-color);
+  text-align: center;
+  line-height: 45px;
+}
+
+.brands__items .soft{
+  grid-column:1 / 2;
+  grid-row: span 2;
+  background-color:#b0535e;
+  background-image: url(/images/brands/1_Dr.Pepper_\(L\)_234x700.png);
+  background-position: center -20px;
+}
+.brands__items .brands__item:nth-child(2){
+  background-color:#6dccf3;
+  background-image: url(/images/brands/1_Powerade\ Mountain\ Blast_\(L\)_234x700.png);
+  background-position: center;
+}

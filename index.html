@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coca_cola_Redesign</title>
+    <!-- js링크 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- 구글폰트_roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 구글폰트 Shrikhand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/b6d41ceb36.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--slick slider 필요 태그 st-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"
+    />
+    <!-- slick Carousel CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"
+    ></script>
+    <!-- 테일윈드 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <!-- css/js -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <header class="top_bar con-min-width">
+      <nav class="top_menu_box con flex justify-between items-center">
+        <a href="#" class="top_logo">
+          <img src="./images/top_logo_200.png" alt="" />
+        </a>
+        <ul class="flex h-full">
+          <li>
+            <a href="#" class="flex h-full items-center px-4">Our Company</a>
+          </li>
+          <li><a href="#" class="flex h-full items-center px-4">Brands</a></li>
+          <li><a href="#" class="flex h-full items-center px-4">Stories</a></li>
+          <li>
+            <a href="#" class="flex h-full items-center px-4">Creadition</a>
+          </li>
+          <li><a href="#" class="flex h-full items-center px-4">Now</a></li>
+          <li>
+            <a href="#" class="flex h-full items-center px-4"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="flex h-full items-center px-4"
+              ><i class="fa-solid fa-headset"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="slider-wrap">
+      <div class="banner banner_1">
+        <div class="img-box">
+          <img src="./images/main_banner/marshmellow_banner_1_1.jpg" alt="" />
+        </div>
+        <div class="text-box">
+          <h2 class="banner_title">
+            MARSHMELLO’S LIMITED <br />
+            EDITION COCA-COLA®
+          </h2>
+          <span class="banner_body"
+            >Enjoy a musical taste experience that brings you from the front row
+            to center stage.</span
+          >
+          <button class="banner_btn">
+            <p>SHOP NOW</p>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="banner banner_2">
+        <div class="img-box">
+          <img src="./images/main_banner/stardust_banner.jpg" alt="" />
+          <div class="text-box">
+            <h2 class="banner_title">
+              COCA-COLA STARDUST<br />
+              LIMITED EDITION
+            </h2>
+            <span class="banner_body"
+              >A New Flavor That’s Out Of This World</span
+            >
+            <button class="banner_btn">
+              <p>SHOP NOW</p>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner banner_3">
+        <div class="img-box">
+          <img src="./images/main_banner/model_banner.jpg" alt="" />
+          <div class="text-box">
+            <h2 class="banner_title">
+              Enjoy again and again <br />
+              and again.
+            </h2>
+            <span class="banner_body"
+              >Experience joy on repeat with our new bottles made of 100%
+              recycled materials* <br />
+              and discover how we’re one step closer to creating a World Without
+              Waste.</span
+            >
+            <button class="banner_btn">
+              <p>LEARN MORE</p>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner banner_4">
+        <div class="img-box">
+          <img src="./images/main_banner/main_banner_name.jpg" alt="" />
+          <div class="text-box">
+            <h2 class="banner_title">
+              Create Memories with <br />
+              Custom Bottles
+            </h2>
+            <span class="banner_body"
+              >Pick up some bottles with your own custom phrase to make your
+              next summer event extra memorable.</span
+            >
+            <button class="banner_btn">
+              <p>SHOP NOW</p>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="arrival_list mt-24">
+      <h1 class="banner_title text-center">New arrival</h1>
+      <span class="block text-center"
+        >세대를 넘어 사랑받는 짜릿함과 상쾌함</span
+      >
+
+      <div class="list_slide_wrap con mt-24">
+        <div class="content">
+          <div class="img-box p-5">
+            <img src="./images/new_arrivals/new_arrivals01.png" alt="" />
+          </div>
+          <div class="text-box">
+            <a href="#">
+              <p>steady seller</p>
+              <h2>Coca-cola</h2>
+              <div class="price_shopNow">
+                <span>2,900 won</span>
+                <p>SHOP NOW</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="img-box p-5">
+            <img src="./images/new_arrivals/new_arrivals02.png" alt="" />
+          </div>
+          <div class="text-box">
+            <a href="#">
+              <p>steady seller</p>
+              <h2>Coca-cola-zero</h2>
+              <div class="price_shopNow">
+                <span>2,900 won</span>
+                <p>SHOP NOW</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="img-box p-5">
+            <img src="./images/new_arrivals/new_arrivals03.png" alt="" />
+          </div>
+          <div class="text-box">
+            <a href="#">
+              <p>new arrival</p>
+              <h2>Stardust-zero</h2>
+              <div class="price_shopNow">
+                <span>3,500 won</span>
+                <p>SHOP NOW</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="img-box p-5">
+            <img src="./images/new_arrivals/new_arrivals04.png" alt="" />
+          </div>
+          <div class="text-box">
+            <a href="#">
+              <p>steady seller</p>
+              <h2>Coke-zero-sugar</h2>
+              <div class="price_shopNow">
+                <span>2,900 won</span>
+                <p>SHOP NOW</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="img-box p-5">
+            <img src="./images/new_arrivals/new_arrivals05.png" alt="" />
+          </div>
+          <div class="text-box">
+            <a href="#">
+              <p>new arrival</p>
+              <h2>Marshmello’s Limited edition</h2>
+              <div class="price_shopNow">
+                <span>3,500 won</span>
+                <p>SHOP NOW</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="img-box p-5">
+            <img src="./images/new_arrivals/new_arrivals06.png" alt="" />
+          </div>
+          <div class="text-box">
+            <a href="#">
+              <p>new arrival</p>
+              <h2>Jack-coke</h2>
+              <div class="price_shopNow">
+                <span>3,500 won</span>
+                <p>SHOP NOW</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="img-box p-5">
+            <img src="./images/new_arrivals/new_arrivals07.png" alt="" />
+          </div>
+          <div class="text-box">
+            <a href="#">
+              <p>new arrival</p>
+              <h2>Coke-greenpeace</h2>
+              <div class="price_shopNow">
+                <span>2,900 won</span>
+                <p>SHOP NOW</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands mt-44">
+      <h1 class="banner_title text-center">BRANDS</h1>
+      <span class="block text-center"
+        >국내에 출시된 다양한 브랜드를 만나보세요</span
+      >
+      <div class="brands__items con mt-24">
+        <div class="brands__item soft">
+          <div class="title">
+            <h2>Sparkling soft drinks</h2>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="brands__item">1</div>
+        <div class="brands__item">1</div>
+        <div class="brands__item">1</div>
+        <div class="brands__item">1</div>
+      </div>
+    </section>
+  </body>
+</html>
