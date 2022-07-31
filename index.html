@@ -50,14 +50,16 @@
     />
     <!-- css/js -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
+    <!-- 헤더 -->
     <header class="top_bar con-min-width">
       <nav class="top_menu_box con flex justify-between items-center">
         <a href="#" class="top_logo">
           <img src="./images/top_logo_200.png" alt="" />
         </a>
+        <div class="top_menu_box_sub_line"></div>
         <ul class="flex h-full">
           <li>
             <a href="#" class="flex h-full items-center px-4">Our Company</a>
@@ -81,7 +83,7 @@
         </ul>
       </nav>
     </header>
-
+    <!-- 메인슬라이드 -->
     <main class="slider-wrap">
       <div class="banner banner_1">
         <div class="img-box">
@@ -164,7 +166,7 @@
         </div>
       </div>
     </main>
-
+    <!-- 신제품메뉴리스트 -->
     <section class="arrival_list mt-24">
       <h1 class="banner_title text-center">New arrival</h1>
       <span class="block text-center"
@@ -285,7 +287,7 @@
         </div>
       </div>
     </section>
-
+    <!-- 브랜드 -->
     <section class="brands mt-44">
       <h1 class="banner_title text-center">BRANDS</h1>
       <span class="block text-center"
@@ -293,16 +295,232 @@
       >
       <div class="brands__items con mt-24">
         <div class="brands__item soft">
-          <div class="title">
-            <h2>Sparkling soft drinks</h2>
-            <i class="fa-solid fa-plus"></i>
+          <div class="title mt-8">
+            <h2>
+              Sparkling <br />
+              soft drinks
+            </h2>
+            <i class="fa-solid fa-circle-plus"></i>
           </div>
         </div>
-        <div class="brands__item">1</div>
-        <div class="brands__item">1</div>
-        <div class="brands__item">1</div>
-        <div class="brands__item">1</div>
+
+        <div class="brands__item">
+          <div class="title">
+            <h2>
+              Sports drinks <br />
+              & Hydration
+            </h2>
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+        </div>
+
+        <div class="brands__item">
+          <div class="title">
+            <h2>Juices</h2>
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+        </div>
+
+        <div class="brands__item">
+          <div class="title">
+            <h2>Coffees</h2>
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+        </div>
+
+        <div class="brands__item">
+          <div class="title">
+            <h2>Teas drinks</h2>
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- 캠페인배너 -->
+    <section class="campaign_banner mt-60">
+      <div class="slides-wrap">
+        <div class="inner_slide bear">
+          <div class="img-box">
+            <img src="./images/main_banner/campaign_banner_01.jpg" alt="" />
+          </div>
+          <div class="text-box">
+            <h2>
+              How we do business is just as important <br />
+              as the products we make
+            </h2>
+            <button>MORE VIEW</button>
+          </div>
+        </div>
+
+        <div class="inner_slide">
+          <div class="img-box">
+            <img src="./images/main_banner/campaign_banner_02.jpg" alt="" />
+          </div>
+          <div class="text-box">
+            <h2>
+              We do business the right way by following our values and working
+              toward solutions that benefit everyone.
+            </h2>
+            <button>MORE VIEW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 비즈니스 -->
+    <section class="business_wrap mt-60">
+      <h1 class="banner_title text-center">Sustainable Business</h1>
+      <span class="block text-center"
+        >더 나은 세상을 위해, 지속가능한 패키지</span
+      >
+      <div class="business_contents con-min-width mt-32">
+        <div class="content-wrap con">
+          <div class="content flex-1">
+            <div class="img-box flex-1">
+              <img src="./images/business/Sustainable_Business_01.jpg" alt="" />
+            </div>
+            <div class="text-box flex-1">
+              <h3>코카콜라의 rPET 프로젝트</h3>
+              <h4>의자부터 가방 , 굿즈 , 그리고 다시 페트병으로 재탄생</h4>
+              <span>
+                <a href="#">
+                  자세히 보기<i class="ml-2 fa-solid fa-arrow-right-long"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+          <div class="content flex-1">
+            <div class="img-box">
+              <img src="./images/business/Sustainable_Business_02.jpg" alt="" />
+            </div>
+            <div class="text-box">
+              <h3>원더플 캠페인</h3>
+              <h4>플라스틱이 굿즈가 되어 돌아오는 원더플 캠페인</h4>
+              <span>
+                <a href="#">
+                  자세히 보기<i class="ml-2 fa-solid fa-arrow-right-long"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+          <div class="content flex-1">
+            <div class="img-box">
+              <img src="./images/business/Sustainable_Business_03.jpg" alt="" />
+            </div>
+            <div class="text-box">
+              <h3>물 환원 프로젝트</h3>
+              <h4>제품 생산에 사용한 물을 돌려주는 환원 프로젝트</h4>
+              <span>
+                <a href="#">
+                  자세히 보기<i class="ml-2 fa-solid fa-arrow-right-long"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+          <div class="content flex-1">
+            <div class="img-box">
+              <img src="./images/business/Sustainable_Business_04.jpg" alt="" />
+            </div>
+            <div class="text-box">
+              <h3>코카콜라의 프로젝트</h3>
+              <h4>코카-콜라 재단의 미션과 비젼은?</h4>
+              <span>
+                <a href="#">
+                  자세히 보기<i class="ml-2 fa-solid fa-arrow-right-long"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 에디션 -->
+    <section class="edition_wrap con-min-width mt-60">
+      <h1 class="banner_title text-center">Special Edition</h1>
+      <span class="block text-center">코카콜라의 특별한 굿즈를 만나보세요</span>
+      <div class="contents con mt-32">
+        <div>
+          <img src="./images/camping_product/edition_01.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/camping_product/edition_02.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/camping_product/edition_03.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/camping_product/edition_04.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/camping_product/edition_05.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/camping_product/edition_06.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/camping_product/edition_07.jpg" alt="" />
+        </div>
+        <div>
+          <img src="./images/camping_product/edition_08.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- 하단웨이브 -->
+    <section class="footer-wave">
+      <div class="custom-shape-divider-top-1659268948">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!-- 푸터 -->
+    <footer class="footer_inner">
+      <div class="footer_img">
+        <img src="./images/footer_coke.png" alt="" />
+      </div>
+      <div class="footer_logo_menu">
+        <a href="#" class="footer_logo">
+          <img src="./images/footer_logo_300.png" alt="" />
+        </a>
+        <span>2022 The Coca-Cola Company. All Rights Reserved.</span>
+        <div class="footer_menu flex">
+          <ul class="menu_box flex">
+            <li>
+              <a href="#">고객센터</a>
+            </li>
+            <li><a href="#">사이트 운영정책</a></li>
+            <li><a href="#">히스토리</a></li>
+            <li><a href="#">글로벌 코카-콜라</a></li>
+          </ul>
+          <ul class="flex h-full">
+            <li>
+              <a href="#"
+                ><i
+                  class="mr-4 h-full items-center text-lg fa-brands fa-youtube"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="mr-4 text-lg fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="mr-4 text-lg fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="text-lg fa-brands fa-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
