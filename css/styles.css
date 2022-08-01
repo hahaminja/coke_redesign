@@ -266,7 +266,7 @@ body {
   grid-column:1 / 2;
   grid-row: span 2;
   background-color:#b0535e;
-  background-image: url(/images/brands/1_Dr.Pepper_\(L\)_234x700.png);
+  background-image: url(/images/brands/brands_01.png);
   background-position: center -20px;
 }
 .brands__items .brands__item:not(:first-child){
@@ -276,23 +276,23 @@ body {
 
 .brands__items .brands__item:nth-child(2){
   background-color:#6dccf3;
-  background-image: url(/images/brands/1_Powerade\ Mountain\ Blast_\(L\)_234x700.png);
+  background-image: url(/images/brands/brands_02.png);
   background-position: center;
 }
 .brands__items .brands__item:nth-child(3){
   background-color:#eed164;
-  background-image: url(/images/brands/1_Crused-Pear_\(L\)_234x700.png);
+  background-image: url(/images/brands/brands_03.png);
   background-size: contain;
   background-position: center;
 }
 .brands__items .brands__item:nth-child(4){
   background-color:#bd9f83;
-  background-image: url(/images/brands/1_Georgia\ Craft\ Black_\(L\)_234x700.png);
+  background-image: url(/images/brands/brands_04.png);
   background-position: center;
 }
 .brands__items .brands__item:nth-child(5){
   background-color:#60ccbb;
-  background-image: url(/images/brands/1_Sun\ of\ Mate_\(L\)_234x700.png);
+  background-image: url(/images/brands/brands_05.png);
   background-position: center;
 }
 /* brands end */

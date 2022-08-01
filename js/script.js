@@ -1,3 +1,6 @@
+gsap.registerPlugin(ScrollTrigger);
+
+// 슬라이드
 $(document).ready(function(){
   $('.slider-wrap').slick({
     autoplay : true ,
@@ -23,10 +26,11 @@ $(document).ready(function(){
     autoplaySpeed : 3000,
     arrows:false,
     pauseOnHover: false,
-
   });
+  
 
 });
+// 헤더 탑바_밑줄
 function Topbar__init(){
   var $Line = $(".top_menu_box_sub_line");
 
@@ -45,3 +49,12 @@ function Topbar__init(){
   $(".top_menu_box ul > li").eq(0).mouseenter();
 }
 Topbar__init();
+
+
+gsap.from(".footer_img > img",{
+  x:-500,
+  duration:3,
+  opacity:0,
+
+
+});
