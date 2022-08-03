@@ -85,6 +85,78 @@ body {
   color:var(--black-color);
   transition: 0.4s;
 }
+/* 서브메뉴 */
+.top_menu_box_sub_menu{
+  position: absolute;
+  width: 100%;
+  background-color: var(--bg-white-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 99;
+}
+.top_menu_box_sub_menu.active{  
+  opacity: 1;
+  visibility: visible;
+}
+.sub_menu_box .content{
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.sub_menu_box .content.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sub_menu_box .content{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1.5fr;
+  gap:20px;
+  padding:10px 20px;
+  justify-content: center;
+}
+.sub_menu_box .content .sub_menu_img p{
+  font-size: var(--text-ss);
+  color:var(--gray-color);
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.sub_menu_box .content span{
+  font-size: var(--text-ss);
+  color: var(--gray-color);
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-position: under;
+  cursor: pointer;
+}
+.sub_menu_box .content .menu ul li{
+  font-size: var(--text-sm);
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  margin: 7px 0;
+}
+.menu ul li:hover > a{
+  color:red;
+}
+
+/* 스크롤탑 버튼 */
+.up_btn {
+  font-size: 40px;
+  position: fixed;
+  right:40px;
+  bottom: 40px;
+  z-index: 99;
+  color:var(--white-color);
+  text-shadow: 0 3px 7px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  cursor: pointer;
+}
+
 /* slider-wrap 메인배너 st */
 .slider-wrap{
   margin-top: var(--top-size);
@@ -96,6 +168,7 @@ body {
   position: absolute;
   top: 30%;
   left:15%;
+  z-index: 999;
 }
 .slider-wrap .banner:nth-child(4){
   text-align: end;
@@ -114,6 +187,10 @@ body {
   line-height:50px;
   color:var(--white-color);
   letter-spacing: 0.8px;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(30px);
+  transition-delay: 0.5s;
 }
 .slider-wrap .banner .text-box .banner_body{
   font-size: var(--text-sx);
@@ -121,6 +198,10 @@ body {
   margin-bottom: 40px;
   color:var(--white-color);
   letter-spacing: 0.3px;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(30px);
+  transition-delay: 1s;
 }
 .slider-wrap .banner .text-box .banner_btn{
   display: block;
@@ -130,6 +211,10 @@ body {
   border:1px solid var(--red-color);
   background-color:var(--red-color);
   border-radius: 7px;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(30px);
+  transition-delay: 1.5s;
 }
 .slider-wrap .banner .text-box .banner_btn p{ 
   display: inline-block;
@@ -141,12 +226,20 @@ body {
 .slider-wrap .banner .text-box .banner_btn:hover i{
   transform: translateX(5px);
 }
+
 /* 배너 3. 4번 */
 .slider-wrap .banner_3 .text-box .banner_title ,
 .slider-wrap .banner_3 .text-box .banner_body,
 .slider-wrap .banner_4 .text-box .banner_title,
 .slider-wrap .banner_4 .text-box .banner_body{
   color:var(--black-color) ;
+}
+
+.slider-wrap .banner .text-box.active .banner_title,
+.slider-wrap .banner .text-box.active .banner_body,
+.slider-wrap .banner .text-box.active .banner_btn{
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /* banner_slick */
@@ -297,53 +390,69 @@ body {
 }
 /* brands end */
 /* campaign_banner 캠페인 st */
-.slides-wrap .inner_slide{
+.slides-wrap .content{
   position: relative;
 }
-.slides-wrap .inner_slide .text-box{
+.slides-wrap .content .text-box{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   user-select: none;
+  z-index: 999;
 }
-.slides-wrap .inner_slide.bear .text-box{
+.slides-wrap .content.bear .text-box{
   top: 25%;
 }
-.slides-wrap .inner_slide .text-box h2{
+.slides-wrap .content .text-box .title{
   font-size: var(--text-xl);
   color:var(--white-color);
   line-height: 50px;
   font-weight: 500;
   text-shadow: 0 5px 7px rgba(0,0,0,.2);
   letter-spacing: 0.8px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+  transition-delay: 0.5s;
 }
-.slides-wrap .inner_slide .text-box button{
+.slides-wrap .content .text-box .btn{
   font-size: var(--text-sx);
   background-color:var(--purple-color);
   color:var(--white-color);
+  display: inline-block;
   padding:5px 10px;
   border: 1px solid var(--white-color);
   border-radius: 7px;
   margin-top: 17px;
-  opacity: 0.8;
   transition: 0.3s;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s;
+  cursor: pointer;
 }
-.slides-wrap .inner_slide .text-box button:hover{
+
+.slides-wrap .content .text-box.active p{
   opacity: 1;
+  transform: translateY(0);
 }
+
 /* slides-wrap dots  */
 .slides-wrap .slick-dots{
   bottom: 40px;
 }
 .slides-wrap .slick-dots li button:before{
   font-size: 15px;
-  color:var(--red-color);
+  color:var(--white-color);
 }
 /*campaign_banner end */
 
 /* business_contents 비즈니스 st  */
+.business_wrap {
+  user-select: none;
+}
 .business_wrap > h1{
   font-size: var(--text-2xl);
   color:var(--purple-color);
@@ -357,18 +466,26 @@ body {
   gap: 48px;
 }
 .content-wrap .content{
+  border-radius: 10px;
+  overflow: hidden;
   width: 264px;
   height: 400px;
   user-select: none;
   display: flex;
   flex-direction: column; 
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.content-wrap .content:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3),
+              0 10px 10px rgba(0,0,0,0.3) 
 }
 .content-wrap .content .text-box{
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 10px;
+  padding:5px 10px 7px 10px;
 }
 .content-wrap .content .text-box h3{
   font-size: var(--text-md);
@@ -385,7 +502,7 @@ body {
   color:var(--purple-color);
   border: 1px solid var(--purple-color);
   padding: 5px 10px ;
-  border-radius: 7px;
+  border-radius: 10px;
   transition: .3s;
   align-self: flex-end;
 }
@@ -395,6 +512,9 @@ body {
 }
 /* business_wrap 비즈니스 end */
 /* edition 에디션 st  */
+.edition_wrap{
+  user-select: none;
+}
 .edition_wrap > h1{
   font-size: var(--text-2xl);
   color:var(--purple-color);
@@ -447,12 +567,13 @@ body {
 .custom-shape-divider-top-1659268948 .shape-fill {
   fill: var(--bg-white-color);
 }
+
 .footer_inner{
   background-color: var(--red-color);
   position: relative;
-  height: 450px;
+  height: 500px;
 }
-.footer_img{
+.footer_img{ 
   position: absolute;
   bottom: 0;
   left: 0;
