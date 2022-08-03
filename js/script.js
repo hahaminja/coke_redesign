@@ -135,7 +135,7 @@ gsap.from(".footer_img > img", {
     markers:true,
     start:"top 80%",
     end:"bottom 30%",
-    
+    // scrub:true,
   }
 });
 
