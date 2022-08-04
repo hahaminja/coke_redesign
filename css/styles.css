@@ -50,12 +50,29 @@ body {
   min-width: 1200px;
 }
 .con {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* 스타일 */
+/* 스크롤바 커스텀 */
+/* 임의의 영역 생성 */
+body::-webkit-scrollbar {
+  width: 12px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 10%; /* 스크롤바의 길이 */
+  background:#00966F; /* 스크롤바의 색상 */
+  
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #94bcb2  /*스크롤바 뒷 배경 색상*/
+}
+
 /* top_bar */
 .top_bar {
   background-color: var(--red-color);
@@ -68,7 +85,6 @@ body {
 .top_menu_box {
   color: var(--white-color);
   height: var(--top-size);
-  position: relative;
 }
 
 .top_menu_box_sub_line{
@@ -81,66 +97,70 @@ body {
   transition: left .5s, width 0.2s;
 }
 
-.top_menu_box ul li:hover a{
+  .top_menu_box > ul > li > a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+  }
+.top_menu_box > ul > li:hover > a{
   color:var(--black-color);
   transition: 0.4s;
 }
 /* 서브메뉴 */
-.top_menu_box_sub_menu{
-  position: absolute;
+.top_menu_box ul > li .sub_menu{
+  background-color:rgba(255,255,255,0.9);
   width: 100%;
-  background-color: var(--bg-white-color);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-  z-index: 99;
 }
-.top_menu_box_sub_menu.active{  
-  opacity: 1;
-  visibility: visible;
+.top_menu_box ul > li > div{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: none;
 }
-.sub_menu_box .content{
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-}
-.sub_menu_box .content.active {
-  opacity: 1;
-  visibility: visible;
-}
-.sub_menu_box .content{
+.top_menu_box ul > li:hover div{
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 2fr 1.5fr;
-  gap:20px;
-  padding:10px 20px;
-  justify-content: center;
 }
-.sub_menu_box .content .sub_menu_img p{
-  font-size: var(--text-ss);
-  color:var(--gray-color);
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-underline-position: under;
-  margin-top: 10px;
-  cursor: pointer;
+.top_menu_box ul > li > div > div{
+  padding:20px;
 }
-.sub_menu_box .content span{
-  font-size: var(--text-ss);
-  color: var(--gray-color);
-  text-transform: uppercase;
+.top_menu_box ul > li > div div{
+  display: grid;
+  color:black;
+  grid-template-columns: 2fr 1.5fr 1fr 1.5fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+.top_menu_box ul > li > div .sub_img{
+  display: flex;
+  flex-direction: column;
   text-decoration: underline;
   text-underline-position: under;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-.sub_menu_box .content .menu ul li{
+.top_menu_box ul > li > div > div ul li:first-child{
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-underline-position: under;
+  font-weight: 500;
+}
+.top_menu_box ul > li > div > div ul li a{
+  display: block;
   font-size: var(--text-sm);
-  font-weight: 400;
   letter-spacing: 0.8px;
-  margin: 7px 0;
 }
-.menu ul li:hover > a{
-  color:red;
+.top_menu_box ul > li > div > div ul li:not(:first-child):hover a{
+  color: var(--red-color);
+  text-decoration: underline;
+  text-underline-position: under;
+  
 }
+/* 서브메뉴 */
 
 /* 스크롤탑 버튼 */
 .up_btn {

@@ -59,13 +59,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
     />
     <!-- aos 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- css/js -->
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/script.js" defer></script>
   </head>
   <body>
+    <!-- 스크롤바 커스텀 -->
+    <div class="scrollBar"></div>
     <!-- 헤더 -->
     <header class="top_bar con-min-width">
       <nav class="top_menu_box con flex justify-between items-center">
@@ -75,46 +80,23 @@
         <div class="top_menu_box_sub_line"></div>
         <ul class="flex h-full">
           <li>
-            <a href="#" class="flex h-full items-center px-4">Our Company</a>
-          </li>
-          <li><a href="#" class="flex h-full items-center px-4">Brands</a></li>
-          <li><a href="#" class="flex h-full items-center px-4">Stories</a></li>
-          <li>
-            <a href="#" class="flex h-full items-center px-4">Creadition</a>
-          </li>
-          <li><a href="#" class="flex h-full items-center px-4">Now</a></li>
-          <li>
-            <a href="#" class="flex h-full items-center px-4"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#" class="flex h-full items-center px-4"
-              ><i class="fa-solid fa-headset"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="top_menu_box_sub_menu con-min-width">
-        <div class="sub_menu_box con">
-            <div class="content">
-              <div class="sub_menu_img">
-                <img src="./images/submenu_02.jpg" alt="">
-              <p>Global Coca-cola</p>
-              </div>
-                <div class="menu">
-                  <span class="title">BRANDS</span>
+            <a href="#">Our Company</a>
+            <div class="sub_menu con-min-width">
+              <div class="con mx-auto">
+                <div class="sub_img">
+                  <img src="./images/submenu_01.jpg" alt="" />
+                  <span>Our company</span>
+                </div>
                 <ul>
+                  <li><a href="#">BRANDS</a></li>
                   <li><a href="#">Sparkling soft drinks</a></li>
                   <li><a href="#">Sports drinks & Hydration</a></li>
                   <li><a href="#">Coffees</a></li>
                   <li><a href="#">Juices</a></li>
                   <li><a href="#">Teas</a></li>
                 </ul>
-                </div>
-                <div class="menu">
-                  <span class="title">Stories</span>
                 <ul>
+                  <li><a href="#">Stories</a></li>
                   <li><a href="#">SINCE 1886</a></li>
                   <li><a href="#">Brand Story</a></li>
                   <li><a href="#">Original</a></li>
@@ -123,30 +105,208 @@
                   <li><a href="#">Opener</a></li>
                   <li><a href="#">People</a></li>
                 </ul>
-                </div>
-                <div class="menu">
-                  <span class="title">Creadition</span>
                 <ul>
+                  <li><a href="#">Creadition</a></li>
                   <li><a href="#">코카콜라 왕국</a></li>
-                  <li><a href="#">성수동 핫플 피치스도원_스타더스트</a></li>
+                  <li><a href="#">스타더스트</a></li>
                   <li><a href="#">우주에서 온 코카콜라들</a></li>
                   <li><a href="#">코카콜라 제로 스타더스트</a></li>
                   <li><a href="#">지구를 떠난 코카콜라</a></li>
                 </ul>
-                </div>
-                <div class="menu">
-                  <span class="title">Now</span>
                 <ul>
+                  <li><a href="#">now</a></li>
                   <li><a href="#">IDH의 정체</a></li>
                   <li><a href="#">원더플 캠페인</a></li>
                   <li><a href="#">코카콜라 제로 X 종이의 집</a></li>
                   <li><a href="#">재사용되는 페트병 </a></li>
                 </ul>
-                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </li>
+          <li>
+            <a href="#">Brands</a>
+            <div class="sub_menu con-min-width">
+              <div class="con mx-auto">
+                <div class="sub_img">
+                  <img src="./images/submenu_02.jpg" alt="" />
+                  <span>Our company</span>
+                </div>
+                <ul>
+                  <li><a href="#">BRANDS</a></li>
+                  <li><a href="#">Sparkling soft drinks</a></li>
+                  <li><a href="#">Sports drinks & Hydration</a></li>
+                  <li><a href="#">Coffees</a></li>
+                  <li><a href="#">Juices</a></li>
+                  <li><a href="#">Teas</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Stories</a></li>
+                  <li><a href="#">SINCE 1886</a></li>
+                  <li><a href="#">Brand Story</a></li>
+                  <li><a href="#">Original</a></li>
+                  <li><a href="#">Culture&Food</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Opener</a></li>
+                  <li><a href="#">People</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Creadition</a></li>
+                  <li><a href="#">코카콜라 왕국</a></li>
+                  <li><a href="#">스타더스트</a></li>
+                  <li><a href="#">우주에서 온 코카콜라들</a></li>
+                  <li><a href="#">코카콜라 제로 스타더스트</a></li>
+                  <li><a href="#">지구를 떠난 코카콜라</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">now</a></li>
+                  <li><a href="#">IDH의 정체</a></li>
+                  <li><a href="#">원더플 캠페인</a></li>
+                  <li><a href="#">코카콜라 제로 X 종이의 집</a></li>
+                  <li><a href="#">재사용되는 페트병 </a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Stories</a>
+            <div class="sub_menu con-min-width">
+              <div class="con mx-auto">
+                <div class="sub_img">
+                  <img src="./images/submenu_03.jpg" alt="" />
+                  <span>Our company</span>
+                </div>
+                <ul>
+                  <li><a href="#">BRANDS</a></li>
+                  <li><a href="#">Sparkling soft drinks</a></li>
+                  <li><a href="#">Sports drinks & Hydration</a></li>
+                  <li><a href="#">Coffees</a></li>
+                  <li><a href="#">Juices</a></li>
+                  <li><a href="#">Teas</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Stories</a></li>
+                  <li><a href="#">SINCE 1886</a></li>
+                  <li><a href="#">Brand Story</a></li>
+                  <li><a href="#">Original</a></li>
+                  <li><a href="#">Culture&Food</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Opener</a></li>
+                  <li><a href="#">People</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Creadition</a></li>
+                  <li><a href="#">코카콜라 왕국</a></li>
+                  <li><a href="#">스타더스트</a></li>
+                  <li><a href="#">우주에서 온 코카콜라들</a></li>
+                  <li><a href="#">코카콜라 제로 스타더스트</a></li>
+                  <li><a href="#">지구를 떠난 코카콜라</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">now</a></li>
+                  <li><a href="#">IDH의 정체</a></li>
+                  <li><a href="#">원더플 캠페인</a></li>
+                  <li><a href="#">코카콜라 제로 X 종이의 집</a></li>
+                  <li><a href="#">재사용되는 페트병 </a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Creadition</a>
+            <div class="sub_menu con-min-width">
+              <div class="con mx-auto">
+                <div class="sub_img">
+                  <img src="./images/submenu_04.jpg" alt="" />
+                  <span>Our company</span>
+                </div>
+                <ul>
+                  <li><a href="#">BRANDS</a></li>
+                  <li><a href="#">Sparkling soft drinks</a></li>
+                  <li><a href="#">Sports drinks & Hydration</a></li>
+                  <li><a href="#">Coffees</a></li>
+                  <li><a href="#">Juices</a></li>
+                  <li><a href="#">Teas</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Stories</a></li>
+                  <li><a href="#">SINCE 1886</a></li>
+                  <li><a href="#">Brand Story</a></li>
+                  <li><a href="#">Original</a></li>
+                  <li><a href="#">Culture&Food</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Opener</a></li>
+                  <li><a href="#">People</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Creadition</a></li>
+                  <li><a href="#">코카콜라 왕국</a></li>
+                  <li><a href="#">스타더스트</a></li>
+                  <li><a href="#">우주에서 온 코카콜라들</a></li>
+                  <li><a href="#">코카콜라 제로 스타더스트</a></li>
+                  <li><a href="#">지구를 떠난 코카콜라</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">now</a></li>
+                  <li><a href="#">IDH의 정체</a></li>
+                  <li><a href="#">원더플 캠페인</a></li>
+                  <li><a href="#">코카콜라 제로 X 종이의 집</a></li>
+                  <li><a href="#">재사용되는 페트병 </a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Now</a>
+            <div class="sub_menu con-min-width">
+              <div class="con mx-auto">
+                <div class="sub_img">
+                  <img src="./images/submenu_05.jpg" alt="" />
+                  <span>Our company</span>
+                </div>
+                <ul>
+                  <li><a href="#">BRANDS</a></li>
+                  <li><a href="#">Sparkling soft drinks</a></li>
+                  <li><a href="#">Sports drinks & Hydration</a></li>
+                  <li><a href="#">Coffees</a></li>
+                  <li><a href="#">Juices</a></li>
+                  <li><a href="#">Teas</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Stories</a></li>
+                  <li><a href="#">SINCE 1886</a></li>
+                  <li><a href="#">Brand Story</a></li>
+                  <li><a href="#">Original</a></li>
+                  <li><a href="#">Culture&Food</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Opener</a></li>
+                  <li><a href="#">People</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Creadition</a></li>
+                  <li><a href="#">코카콜라 왕국</a></li>
+                  <li><a href="#">스타더스트</a></li>
+                  <li><a href="#">우주에서 온 코카콜라들</a></li>
+                  <li><a href="#">코카콜라 제로 스타더스트</a></li>
+                  <li><a href="#">지구를 떠난 코카콜라</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">now</a></li>
+                  <li><a href="#">IDH의 정체</a></li>
+                  <li><a href="#">원더플 캠페인</a></li>
+                  <li><a href="#">코카콜라 제로 X 종이의 집</a></li>
+                  <li><a href="#">재사용되는 페트병 </a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-headset"></i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- 스크롤탑 버튼 -->
     <div class="up_btn">
@@ -237,7 +397,7 @@
     </main>
     <!-- 신제품메뉴리스트 -->
     <section class="arrival_list mt-60">
-      <div  data-aos="zoom-in" data-aos-duration="500">
+      <div data-aos="zoom-in" data-aos-duration="500">
         <h1 class="banner_title text-center">New arrival</h1>
         <span class="block text-center"
           >세대를 넘어 사랑받는 짜릿함과 상쾌함</span
@@ -363,12 +523,16 @@
       <div data-aos="zoom-in" data-aos-duration="500">
         <h1 class="banner_title text-center">BRANDS</h1>
         <span class="block text-center"
-        >국내에 출시된 다양한 브랜드를 만나보세요</span
-          >
+          >국내에 출시된 다양한 브랜드를 만나보세요</span
+        >
       </div>
       <div class="brands__items con mt-40">
-
-        <div class="brands__item soft" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="easeOutCubic">
+        <div
+          class="brands__item soft"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+          data-aos-easing="easeOutCubic"
+        >
           <div class="title mt-8">
             <h2>
               Sparkling <br />
@@ -378,7 +542,13 @@
           </div>
         </div>
 
-        <div class="brands__item" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="200" data-aos-easing="easeOutCubic">
+        <div
+          class="brands__item"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-delay="200"
+          data-aos-easing="easeOutCubic"
+        >
           <div class="title">
             <h2>
               Sports drinks <br />
@@ -388,21 +558,39 @@
           </div>
         </div>
 
-        <div class="brands__item" data-aos="flip-right" data-aos-duration="2000"data-aos-delay="350" data-aos-easing="easeOutCubic">
+        <div
+          class="brands__item"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-delay="350"
+          data-aos-easing="easeOutCubic"
+        >
           <div class="title">
             <h2>Juices</h2>
             <i class="fa-solid fa-circle-plus"></i>
           </div>
         </div>
 
-        <div class="brands__item" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="450" data-aos-easing="easeOutCubic">
+        <div
+          class="brands__item"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-delay="450"
+          data-aos-easing="easeOutCubic"
+        >
           <div class="title">
             <h2>Coffees</h2>
             <i class="fa-solid fa-circle-plus"></i>
           </div>
         </div>
 
-        <div class="brands__item" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="550" data-aos-easing="easeOutCubic" >
+        <div
+          class="brands__item"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-delay="550"
+          data-aos-easing="easeOutCubic"
+        >
           <div class="title">
             <h2>Teas drinks</h2>
             <i class="fa-solid fa-circle-plus"></i>
@@ -443,14 +631,18 @@
     <!-- 비즈니스 -->
     <section class="business_wrap mt-60">
       <div data-aos="zoom-in" data-aos-duration="500">
-      <h1 class="banner_title text-center">Sustainable Business</h1>
-      <span class="block text-center"
-        >더 나은 세상을 위해, 지속가능한 패키지</span
-      >
-    </div>
+        <h1 class="banner_title text-center">Sustainable Business</h1>
+        <span class="block text-center"
+          >더 나은 세상을 위해, 지속가능한 패키지</span
+        >
+      </div>
       <div class="business_contents con-min-width mt-52">
         <div class="content-wrap con">
-          <div class="content flex-1" data-aos="fade-up" data-aos-duration="700">
+          <div
+            class="content flex-1"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
             <div class="img-box flex-1">
               <img src="./images/business/Sustainable_Business_01.jpg" alt="" />
             </div>
@@ -464,7 +656,11 @@
               </span>
             </div>
           </div>
-          <div class="content flex-1" data-aos="fade-up" data-aos-duration="700" >
+          <div
+            class="content flex-1"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_02.jpg" alt="" />
             </div>
@@ -478,7 +674,11 @@
               </span>
             </div>
           </div>
-          <div class="content flex-1" data-aos="fade-up" data-aos-duration="700">
+          <div
+            class="content flex-1"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_03.jpg" alt="" />
             </div>
@@ -492,7 +692,11 @@
               </span>
             </div>
           </div>
-          <div class="content flex-1" data-aos="fade-up" data-aos-duration="700">
+          <div
+            class="content flex-1"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_04.jpg" alt="" />
             </div>
@@ -512,9 +716,11 @@
     <!-- 에디션 -->
     <section class="edition_wrap con-min-width mt-60">
       <div data-aos="zoom-in" data-aos-duration="500">
-      <h1 class="banner_title text-center">Special Edition</h1>
-      <span class="block text-center">코카콜라의 특별한 굿즈를 만나보세요</span>
-    </div>
+        <h1 class="banner_title text-center">Special Edition</h1>
+        <span class="block text-center"
+          >코카콜라의 특별한 굿즈를 만나보세요</span
+        >
+      </div>
       <div class="contents con mt-52">
         <div data-aos="fade-up" data-aos-duration="700">
           <img src="./images/camping_product/edition_01.jpg" alt="" />

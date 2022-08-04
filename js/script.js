@@ -31,28 +31,6 @@ $(window).scroll(function(){
   }
 
 });
-// 스크롤탑바 버튼 끝
-// 서브메뉴 엑티브 시작
-// $(".top_menu_box li").mouseenter(function(){
-//   // var thisIndex = $(this).index()
-
-//   $(".top_menu_box_sub_menu .content").addClass("active");
-//   $(".top_menu_box_sub_menu").addClass("active");
-// })
-
-// $(".top_menu_box li").mouseleave(function(){
-// //   // var thisIndex = $(this).index()
-
-//   $(".top_menu_box_sub_menu .content").removeClass("active");
-//   $(".top_menu_box_sub_menu").addClass("active");
-
-// $(".top_menu_box_sub_menu .content").mouseenter(function(){
-//   $(".top_menu_box_sub_menu").addClass("active");
-//   $(".top_menu_box_sub_menu .content").addClass("active");
-// })
-
-// });
-
 
 // 서브메뉴 엑티브 끝
   $(".slider-wrap").slick({
