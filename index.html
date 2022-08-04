@@ -58,6 +58,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
     />
+    <!-- aos 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- css/js -->
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/script.js" defer></script>
@@ -233,13 +236,15 @@
       </div>
     </main>
     <!-- 신제품메뉴리스트 -->
-    <section class="arrival_list mt-24">
-      <h1 class="banner_title text-center">New arrival</h1>
-      <span class="block text-center"
-        >세대를 넘어 사랑받는 짜릿함과 상쾌함</span
-      >
+    <section class="arrival_list mt-60">
+      <div  data-aos="zoom-in" data-aos-duration="500">
+        <h1 class="banner_title text-center">New arrival</h1>
+        <span class="block text-center"
+          >세대를 넘어 사랑받는 짜릿함과 상쾌함</span
+        >
+      </div>
 
-      <div class="list_slide_wrap con mt-24">
+      <div class="list_slide_wrap con mt-40">
         <div class="content">
           <div class="img-box p-5">
             <img src="./images/new_arrivals/new_arrivals01.png" alt="" />
@@ -354,13 +359,16 @@
       </div>
     </section>
     <!-- 브랜드 -->
-    <section class="brands mt-44">
-      <h1 class="banner_title text-center">BRANDS</h1>
-      <span class="block text-center"
+    <section class="brands mt-60">
+      <div data-aos="zoom-in" data-aos-duration="500">
+        <h1 class="banner_title text-center">BRANDS</h1>
+        <span class="block text-center"
         >국내에 출시된 다양한 브랜드를 만나보세요</span
-      >
-      <div class="brands__items con mt-24">
-        <div class="brands__item soft">
+          >
+      </div>
+      <div class="brands__items con mt-40">
+
+        <div class="brands__item soft" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="easeOutCubic">
           <div class="title mt-8">
             <h2>
               Sparkling <br />
@@ -370,7 +378,7 @@
           </div>
         </div>
 
-        <div class="brands__item">
+        <div class="brands__item" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="200" data-aos-easing="easeOutCubic">
           <div class="title">
             <h2>
               Sports drinks <br />
@@ -380,21 +388,21 @@
           </div>
         </div>
 
-        <div class="brands__item">
+        <div class="brands__item" data-aos="flip-right" data-aos-duration="2000"data-aos-delay="350" data-aos-easing="easeOutCubic">
           <div class="title">
             <h2>Juices</h2>
             <i class="fa-solid fa-circle-plus"></i>
           </div>
         </div>
 
-        <div class="brands__item">
+        <div class="brands__item" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="450" data-aos-easing="easeOutCubic">
           <div class="title">
             <h2>Coffees</h2>
             <i class="fa-solid fa-circle-plus"></i>
           </div>
         </div>
 
-        <div class="brands__item">
+        <div class="brands__item" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="550" data-aos-easing="easeOutCubic" >
           <div class="title">
             <h2>Teas drinks</h2>
             <i class="fa-solid fa-circle-plus"></i>
@@ -434,13 +442,15 @@
     </section>
     <!-- 비즈니스 -->
     <section class="business_wrap mt-60">
+      <div data-aos="zoom-in" data-aos-duration="500">
       <h1 class="banner_title text-center">Sustainable Business</h1>
       <span class="block text-center"
         >더 나은 세상을 위해, 지속가능한 패키지</span
       >
-      <div class="business_contents con-min-width mt-32">
+    </div>
+      <div class="business_contents con-min-width mt-52">
         <div class="content-wrap con">
-          <div class="content flex-1">
+          <div class="content flex-1" data-aos="fade-up" data-aos-duration="700">
             <div class="img-box flex-1">
               <img src="./images/business/Sustainable_Business_01.jpg" alt="" />
             </div>
@@ -454,7 +464,7 @@
               </span>
             </div>
           </div>
-          <div class="content flex-1">
+          <div class="content flex-1" data-aos="fade-up" data-aos-duration="700" >
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_02.jpg" alt="" />
             </div>
@@ -468,7 +478,7 @@
               </span>
             </div>
           </div>
-          <div class="content flex-1">
+          <div class="content flex-1" data-aos="fade-up" data-aos-duration="700">
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_03.jpg" alt="" />
             </div>
@@ -482,7 +492,7 @@
               </span>
             </div>
           </div>
-          <div class="content flex-1">
+          <div class="content flex-1" data-aos="fade-up" data-aos-duration="700">
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_04.jpg" alt="" />
             </div>
@@ -501,31 +511,33 @@
     </section>
     <!-- 에디션 -->
     <section class="edition_wrap con-min-width mt-60">
+      <div data-aos="zoom-in" data-aos-duration="500">
       <h1 class="banner_title text-center">Special Edition</h1>
       <span class="block text-center">코카콜라의 특별한 굿즈를 만나보세요</span>
-      <div class="contents con mt-32">
-        <div>
+    </div>
+      <div class="contents con mt-52">
+        <div data-aos="fade-up" data-aos-duration="700">
           <img src="./images/camping_product/edition_01.jpg" alt="" />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
           <img src="./images/camping_product/edition_02.jpg" alt="" />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="350">
           <img src="./images/camping_product/edition_03.jpg" alt="" />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="450">
           <img src="./images/camping_product/edition_04.jpg" alt="" />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="550">
           <img src="./images/camping_product/edition_05.jpg" alt="" />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="650">
           <img src="./images/camping_product/edition_06.jpg" alt="" />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="750">
           <img src="./images/camping_product/edition_07.jpg" alt="" />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="850">
           <img src="./images/camping_product/edition_08.jpg" alt="" />
         </div>
       </div>

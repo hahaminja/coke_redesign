@@ -61,6 +61,8 @@ $(window).scroll(function(){
     dots: true,
     arrows : false,
     pauseOnHover: false,
+    pauseOnFocus: false,
+
   });
   // 메인배너슬라이드 글씨 올라오기
   $(".slider-wrap").on("afterChange", function (event, slick, currentSlide) {
@@ -81,6 +83,7 @@ $(window).scroll(function(){
     autoplay : true ,
     autoplaySpeed : 2000 ,
     pauseOnHover: false,
+    pauseOnFocus: false,
 
   });
 // 캠페인 배너 슬라이드
@@ -90,6 +93,7 @@ $(window).scroll(function(){
     autoplaySpeed : 3000,
     arrows:false,
     pauseOnHover: false,
+    pauseOnFocus: false,
   });
   // 캠페인 배너에 글씨 올라오기
   $(".slides-wrap").on("afterChange", function (event, slick, currentSlide) {
@@ -101,7 +105,22 @@ $(window).scroll(function(){
       .addClass("active");
   });
 
+// 스크롤트리거
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".footer_img > img", {
+  duration: 1,
+  x:-800,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".footer_img > img",
+    // markers:true,
+    start:"top 80%",
+    end:"bottom 30%",
+    toggleActions: "play none none reverse"
+  }
 });
+
 // 헤더 탑바_밑줄
 function Topbar__init(){
   var $Line = $(".top_menu_box_sub_line");
@@ -122,21 +141,8 @@ function Topbar__init(){
 }
 Topbar__init();
 
+AOS.init();
 
-// 스크롤트리거ㅠㅠㅠㅠ
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".footer_img > img", {
-  duration: 1,
-  x:-800,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".footer_img > img",
-    markers:true,
-    start:"top 80%",
-    end:"bottom 30%",
-    // scrub:true,
-  }
 });
 
 
