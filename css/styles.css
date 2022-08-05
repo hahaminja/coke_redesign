@@ -59,18 +59,17 @@ body {
 /* 스크롤바 커스텀 */
 /* 임의의 영역 생성 */
 body::-webkit-scrollbar {
-  width: 12px;  /* 스크롤바의 너비 */
+  width: 20px;  /* 스크롤바의 너비 */
 }
 
 body::-webkit-scrollbar-thumb {
   height: 10%; /* 스크롤바의 길이 */
   background:#00966F; /* 스크롤바의 색상 */
-  
   border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #94bcb2  /*스크롤바 뒷 배경 색상*/
+  background: #94bcb2 ; /*스크롤바 뒷 배경 색상*/
 }
 
 /* top_bar */
@@ -123,7 +122,7 @@ body::-webkit-scrollbar-track {
   display: grid;
 }
 .top_menu_box ul > li > div > div{
-  padding:20px;
+  padding:20px 0;
 }
 .top_menu_box ul > li > div div{
   display: grid;
