@@ -380,7 +380,6 @@ body::-webkit-scrollbar-track {
 }
 .brands__items .brands__item:not(:first-child){
   border-radius: 0 70px 0 0;
-  background-size: 22%;
 }
 
 .brands__items .brands__item:nth-child(2){
@@ -391,7 +390,7 @@ body::-webkit-scrollbar-track {
 .brands__items .brands__item:nth-child(3){
   background-color:#eed164;
   background-image: url(../images/brands_03.png);
-  background-size: contain;
+  /* background-size: contain; */
   background-position: center;
 }
 .brands__items .brands__item:nth-child(4){
@@ -501,7 +500,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding:5px 10px 7px 10px;
+  padding:5px 15px 7px 15px;
 }
 .content-wrap .content .text-box h3{
   font-size: var(--text-md);
