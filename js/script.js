@@ -120,8 +120,8 @@ function Topbar__init(){
 Topbar__init();
 
 
+AOS.init();
 
 });
 
-AOS.init();
 
