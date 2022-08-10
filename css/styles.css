@@ -271,14 +271,14 @@ body::-webkit-scrollbar-track {
 }
 
 /* arrival_list 신상품 st */
-.arrival_list div > h1,
-.brands div h1{
+.arrival_list > h1,
+.brands > h1{
   font-size: var(--text-2xl);
   color:var(--purple-color);
   line-height: 70px;
 }
-.arrival_list div > span,
-.brands div > span{
+.arrival_list > span,
+.brands > span{
   font-size: var(--text-sx);
 }
 
@@ -468,12 +468,12 @@ body::-webkit-scrollbar-track {
 .business_wrap {
   user-select: none;
 }
-.business_wrap div > h1{
+.business_wrap > h1{
   font-size: var(--text-2xl);
   color:var(--purple-color);
   line-height: 70px;
 }
-.business_wrap div > span{
+.business_wrap > span{
   font-size: var(--text-sx);
 }
 .business_contents .content-wrap{
@@ -530,12 +530,12 @@ body::-webkit-scrollbar-track {
 .edition_wrap{
   user-select: none;
 }
-.edition_wrap div > h1{
+.edition_wrap > h1{
   font-size: var(--text-2xl);
   color:var(--purple-color);
   line-height: 70px;
 }
-.edition_wrap div > span{
+.edition_wrap > span{
   font-size: var(--text-sx);
 }
 .edition_wrap .contents{
