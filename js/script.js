@@ -1,5 +1,9 @@
 // 슬릭 슬라이드
 $(document).ready(function(){
+  $("body").imagesLoaded(function(){
+    AOS.refresh();
+  });
+
   // 메인배너슬라이드 첫번째페이지 글씨 올라오기
 $('.slider-wrap').on('init', function(event, slick){
   $(".slider-wrap .banner")
@@ -123,5 +127,6 @@ Topbar__init();
 AOS.init();
 
 });
+
 
 
