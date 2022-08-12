@@ -64,13 +64,14 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   height: 10%; /* 스크롤바의 길이 */
-  background:#56423D; /* 스크롤바의 색상 */
+  background:#c1c1c1; /* 스크롤바의 색상 */
   border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #8d7670 ; /*스크롤바 뒷 배경 색상*/
+  background: #e2e2e2 ; /*스크롤바 뒷 배경 색상*/
 }
+
 
 /* top_bar */
 .top_bar {
@@ -487,7 +488,7 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
   overflow: hidden;
   width: 264px;
-  height: 400px;
+
   user-select: none;
   display: flex;
   flex-direction: column; 
@@ -504,6 +505,7 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   justify-content: space-between;
   padding:5px 15px 7px 15px;
+  margin-top: 15px;
 }
 .content-wrap .content .text-box h3{
   font-size: var(--text-md);
@@ -513,12 +515,13 @@ body::-webkit-scrollbar-track {
   font-size: var(--text-sx) ;
   color:var(--gray-color);
   flex-grow: 1;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 .content-wrap .content .text-box span{
   font-size: var(--text-ss);
   color:var(--purple-color);
   border: 1px solid var(--purple-color);
+  margin: 10px 0;
   padding: 5px 10px ;
   border-radius: 10px;
   transition: .3s;
