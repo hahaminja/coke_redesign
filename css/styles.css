@@ -81,10 +81,13 @@ body::-webkit-scrollbar-track {
   top: 0;
   left: 0;
   z-index: 999;
+  position: relative;
 }
 .top_menu_box {
   color: var(--white-color);
   height: var(--top-size);
+  position: relative;
+  padding: 0 10px;
 }
 .top_menu_box .top_logo{
   width: 150px;
@@ -100,21 +103,24 @@ body::-webkit-scrollbar-track {
   transition: left .5s, width 0.2s;
 }
 
-  .top_menu_box > ul > li > a{
+.top_menu_box > ul > li > a{
     display: flex;
     height: 100%;
     align-items: center;
     padding: 0 25px;
     text-align: center;
-  }
+}
+
 .top_menu_box > ul > li:hover > a{
   color:var(--black-color);
   transition: 0.4s;
 }
+
 /* 서브메뉴 */
 .top_menu_box ul > li .sub_menu{
   background-color:rgba(255,255,255,0.9);
   width: 100%;
+  padding: 0 10px;
 }
 .top_menu_box ul > li > div{
   position: absolute;
@@ -161,9 +167,65 @@ body::-webkit-scrollbar-track {
   color: var(--red-color);
   text-decoration: underline;
   text-underline-position: under;
-  
 }
 /* 서브메뉴 */
+
+/* 햄버거메뉴 시작 */
+.toggle_btn{
+  font-size: 35px;
+  color: var(--white-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+  display: none;
+}
+/* 햄버거메뉴 끝 */
+
+/* 반응형 토글 메뉴 시작 */
+.toggle_wrap{
+  width: 100%;
+  background-color: var(--white-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.toggle_wrap > .toggle_menu{
+  font-family: "Shrikhand", cursive;
+  font-size: var(--text-2xl);
+  display: flex;
+  display: none;
+}
+
+.toggle_wrap > .toggle_menu > li > a{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid black;
+  transition: 0.3s;
+}
+.toggle_wrap > .toggle_menu > li:hover > a{
+  color: var(--red-color);
+}
+.toggle_wrap > .toggle_icons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: var(--text-2xl);
+  display: none;
+}
+.toggle_wrap > .toggle_icons > li > a{
+  transition: 0.3s;
+}
+.toggle_wrap > .toggle_icons > li:hover > a{
+  color: var(--red-color);
+}
+/* 반응형 토글 메뉴 끝 */
 
 /* 스크롤탑 버튼 */
 .up_btn {
@@ -182,7 +244,7 @@ body::-webkit-scrollbar-track {
 
 /* slider-wrap 메인배너 st */
 .slider-wrap{
-  margin-top: var(--top-size);
+  height: 100%;
 }
 .slider-wrap .banner{
   position: relative;
@@ -190,7 +252,7 @@ body::-webkit-scrollbar-track {
 .slider-wrap .banner .text-box{
   position: absolute;
   top: 30%;
-  left:15%;
+  left:300px;
   z-index: 999;
 }
 .slider-wrap .banner:nth-child(4){
@@ -203,7 +265,7 @@ body::-webkit-scrollbar-track {
   position: absolute;
   align-items: flex-end;
   top: 30%;
-  right: 15%;
+  right: 300px;
 }
 .slider-wrap .banner .text-box .banner_title{
   font-size: 46px;
@@ -267,7 +329,7 @@ body::-webkit-scrollbar-track {
 
 /* banner_slick */
 .slider-wrap .slick-dots{
-  bottom: 40px;
+  bottom: 30px;
 }
 .slider-wrap .slick-dots li button:before{
   font-size: 15px;
@@ -345,6 +407,7 @@ body::-webkit-scrollbar-track {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap:30px;
+  padding: 0 20px;
 }
 .brands__items .brands__item{
   cursor: pointer;
@@ -471,6 +534,7 @@ body::-webkit-scrollbar-track {
 /* business_contents 비즈니스 st  */
 .business_wrap {
   user-select: none;
+  max-width: 100%;
 }
 .business_wrap > h1{
   font-size: var(--text-2xl);
@@ -482,13 +546,14 @@ body::-webkit-scrollbar-track {
 }
 .business_contents .content-wrap{
   display: flex;
-  gap: 48px;
+  padding: 0 20px;
+  gap: 30px;
+  flex-wrap: no-wrap;
 }
 .content-wrap .content{
   border-radius: 10px;
   overflow: hidden;
   width: 264px;
-
   user-select: none;
   display: flex;
   flex-direction: column; 
@@ -545,14 +610,16 @@ body::-webkit-scrollbar-track {
   font-size: var(--text-sx);
 }
 .edition_wrap .contents{
-  height: 560px;
+  padding: 5px 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: auto;
   gap: 20px;
 }
 .edition_wrap .contents div{
   overflow: hidden;
+  border-radius: 10px;
 }
 .edition_wrap .contents img{
   transition: 0.3s;

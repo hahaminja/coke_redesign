@@ -37,15 +37,16 @@ $(window).scroll(function(){
 });
 
 // 서브메뉴 엑티브 끝
+// 메인배너슬라이드 슬릭
   $(".slider-wrap").slick({
-    autoplay : true ,
+    autoplay : false ,
     autoplaySpeed : 3000 ,
     dots: true,
     arrows : false,
     pauseOnHover: false,
     pauseOnFocus: false,
-
   });
+
   // 메인배너슬라이드 글씨 올라오기
   $(".slider-wrap").on("afterChange", function (event, slick, currentSlide) {
     $(".slider-wrap .banner").find($(".text-box")).removeClass("active");
@@ -67,11 +68,25 @@ $(window).scroll(function(){
     pauseOnHover: false,
     pauseOnFocus: false,
 
+    responsive: [ // 반응형 웹 구현
+      {
+        breakpoint:1024,
+        settings:{
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint:768,
+        settings:{
+          slidesToShow: 2,
+        }
+      }
+    ]
   });
 // 캠페인 배너 슬라이드
   $(".slides-wrap").slick({
     dots:true,
-    autoplay:true,
+    autoplay:false,
     autoplaySpeed : 3000,
     arrows:false,
     pauseOnHover: false,
@@ -126,7 +141,21 @@ Topbar__init();
 
 AOS.init();
 
+  // 반응형 토글메뉴
+  const toggleBtn = document.querySelector(".toggle_btn")
+  const wrap = document.querySelector(".toggle_wrap")
+  const menu = document.querySelector(".toggle_menu")
+  const icons = document.querySelector(".toggle_icons")
+
+  toggleBtn.addEventListener("click", () => {
+    wrap.classList.toggle("active")
+    menu.classList.toggle("active");
+    icons.classList.toggle("active");
+  });
+
 });
+
+
 
 
 

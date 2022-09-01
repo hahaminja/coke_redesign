@@ -65,13 +65,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css/js -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/restyles.css" />
     <script src="./js/script.js"></script>
   </head>
   <body>
     <!-- 스크롤바 커스텀 -->
     <div class="scrollBar"></div>
     <!-- 헤더 -->
-    <header class="top_bar con-min-width">
+    <header class="top_bar">
       <nav class="top_menu_box con flex justify-between items-center">
         <a href="#" class="top_logo">
           <img src="./images/top_logo_200.png" alt="" />
@@ -80,7 +81,7 @@
         <ul class="flex h-full">
           <li>
             <a href="#">Our Company</a>
-            <div class="sub_menu con-min-width">
+            <div class="sub_menu">
               <div class="con mx-auto">
                 <div class="sub_img">
                   <img src="./images/submenu_01.jpg" alt="" />
@@ -124,7 +125,7 @@
           </li>
           <li>
             <a href="#">Brands</a>
-            <div class="sub_menu con-min-width">
+            <div class="sub_menu">
               <div class="con mx-auto">
                 <div class="sub_img">
                   <img src="./images/submenu_02.jpg" alt="" />
@@ -168,7 +169,7 @@
           </li>
           <li>
             <a href="#">Stories</a>
-            <div class="sub_menu con-min-width">
+            <div class="sub_menu">
               <div class="con mx-auto">
                 <div class="sub_img">
                   <img src="./images/submenu_03.jpg" alt="" />
@@ -212,7 +213,7 @@
           </li>
           <li>
             <a href="#">Creadition</a>
-            <div class="sub_menu con-min-width">
+            <div class="sub_menu">
               <div class="con mx-auto">
                 <div class="sub_img">
                   <img src="./images/submenu_04.jpg" alt="" />
@@ -256,7 +257,7 @@
           </li>
           <li>
             <a href="#">Now</a>
-            <div class="sub_menu con-min-width">
+            <div class="sub_menu">
               <div class="con mx-auto">
                 <div class="sub_img">
                   <img src="./images/submenu_05.jpg" alt="" />
@@ -305,7 +306,32 @@
             <a href="#"><i class="fa-solid fa-headset"></i></a>
           </li>
         </ul>
+        <!-- 햄버거바 토글 버튼 -->
+        <a href="#" class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <!-- 햄버거바 토글 버튼 -->
       </nav>
+
+      <!-- 반응형 메뉴 시작-->
+      <div class="toggle_wrap">
+        <ul class="toggle_menu flex flex-col">
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Bransds</a></li>
+          <li><a href="#">Stories</a></li>
+          <li><a href="#">Creadition</a></li>
+          <li><a href="#">Now</a></li>
+        </ul>
+        <ul class="toggle_icons">
+          <li>
+            <a href="#"><i class="px-2 fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="px-2 fa-solid fa-headset"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- 반응형 메뉴 끝 -->
     </header>
     <!-- 스크롤탑 버튼 -->
     <div class="up_btn">
@@ -649,13 +675,9 @@
       <span class="block text-center" data-aos="zoom-in" data-aos-duration="500"
         >더 나은 세상을 위해, 지속가능한 패키지</span
       >
-      <div class="business_contents con-min-width mt-52">
+      <div class="business_contents mt-52">
         <div class="content-wrap con">
-          <div
-            class="content flex-1"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
+          <div class="content" data-aos="fade-up" data-aos-duration="700">
             <div class="img-box flex-1">
               <img src="./images/business/Sustainable_Business_01.jpg" alt="" />
             </div>
@@ -669,11 +691,7 @@
               </span>
             </div>
           </div>
-          <div
-            class="content flex-1"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
+          <div class="content" data-aos="fade-up" data-aos-duration="700">
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_02.jpg" alt="" />
             </div>
@@ -687,11 +705,7 @@
               </span>
             </div>
           </div>
-          <div
-            class="content flex-1"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
+          <div class="content" data-aos="fade-up" data-aos-duration="700">
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_03.jpg" alt="" />
             </div>
@@ -708,11 +722,7 @@
               </span>
             </div>
           </div>
-          <div
-            class="content flex-1"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
+          <div class="content" data-aos="fade-up" data-aos-duration="700">
             <div class="img-box">
               <img src="./images/business/Sustainable_Business_04.jpg" alt="" />
             </div>
@@ -741,7 +751,7 @@
       <span class="block text-center" data-aos="zoom-in" data-aos-duration="500"
         >코카콜라의 특별한 굿즈를 만나보세요</span
       >
-      <div class="con-min-width">
+      <div class="contents-wrap">
         <div class="contents con mt-52">
           <div data-aos="fade-up" data-aos-duration="700">
             <img src="./images/camping_product/edition_01.jpg" alt="" />
@@ -806,7 +816,7 @@
               <li><a href="#">히스토리</a></li>
               <li><a href="#">글로벌 코카-콜라</a></li>
             </ul>
-            <ul class="flex h-full">
+            <ul class="icon-menu flex h-full">
               <li>
                 <a href="#"
                   ><i

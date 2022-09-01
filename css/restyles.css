@@ -1,0 +1,276 @@
+
+@media screen and (min-width:1025px) and (max-width:1500px){
+  .slider-wrap .banner .text-box{
+    width: 60%;
+    top: 50%;
+    left:10%;
+    transform: translateY(-60%);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .top_menu_box{
+    padding: 0 20px;
+  }
+  /* 서브메뉴 시작 */
+  /* .sub_menu .con{
+    width: 90%;
+  }
+  .top_menu_box ul > li > div div{
+    grid-template-columns: 2fr repeat(4, 1.7fr);
+    gap: 5px;
+  } */
+
+  .top_menu_box > ul {
+    display: none;
+  }
+  .top_menu_box_sub_line{
+    display: none;
+  }
+  /* 서브메뉴 끝 */
+  /* 메인배너슬라이드 시작 */
+  .slider-wrap .slick-dots{
+    bottom: 20px;
+  }
+  .slider-wrap .slick-dots li button:before{
+    font-size: 13px;
+  }
+  /* 메인배너슬라이드 */
+  .slider-wrap .banner .text-box{
+    top: 50%;
+    left:5%;
+    transform: translateY(-60%);
+  }
+
+  .slider-wrap .banner:nth-child(4) .text-box{
+    top: 50%;
+    right:5%;
+    transform: translateY(-60%);
+  }
+  
+  .slider-wrap .banner .text-box .banner_title{
+    font-size: 40px;
+    line-height:38px;
+    text-shadow:0px 2px 2px #888 ;
+  }
+
+  .slider-wrap .banner .text-box .banner_btn{
+    font-size: var(--text-ss);
+    padding:5px 15px;
+  }
+
+  .slider-wrap .banner .text-box .banner_body{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  .slider-wrap .banner:nth-child(4) .text-box .banner_body{
+    width: 45%;
+  }
+  /* 메인배너슬라이드 끝 */
+  .arrival_list{
+    margin-top: 170px;
+  }
+  /* 음료리스트 시작*/
+  .list_slide_wrap .content{
+    padding:0 30px;
+  }
+  .list_slide_wrap .content .text-box{
+    margin-top: 20px;
+  }
+
+  .list_slide_wrap .content .text-box h2{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .list_slide_wrap .content .text-box .price_shopNow span{
+    font-size: 18px;
+  }
+  .list_slide_wrap .content .text-box .price_shopNow p{
+    font-size: var(--text-ss);
+  }
+
+  /* 음료리스트 끝*/
+  /* 브랜드 */
+  .brands{
+    margin-top: 170px;
+  }
+  .brands__items{
+    gap:15px;
+    padding: 0 20px;
+  }
+  /* 브랜드 끝 */
+  /* 캠페인 */
+  .slides-wrap .content .text-box{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slides-wrap .content.bear .text-box{
+    top: 35%;
+  }
+
+  .slides-wrap .content .text-box .title{
+    font-size: 40px;
+    line-height: 45px;
+    text-shadow: 0 2px 4px rgba(0,0,0,.2);
+  }
+
+  .slides-wrap .slick-dots{
+    bottom: 10px;
+  }
+  .slides-wrap .slick-dots li button:before{
+    font-size: 10px;
+  }
+  /* 캠페인 끝 */
+  /* 비즈니스 시작 */
+  .business_wrap{
+    margin-top: 170px;
+  }
+  .business_contents .content-wrap{
+    padding: 0 15px;
+    gap: 10px;
+  }
+  /* 비즈니스 끝 */
+  .edition_wrap{
+    margin-top: 170px;
+  }
+  /* 푸터 시작*/
+  .footer-wave{
+    margin-top: 300px;
+  }
+  .footer_inner{
+    height: 600px;
+  }
+  .footer_img img{
+    max-width:600px;
+  }
+  .footer_logo_menu{
+    right:30px;
+    bottom: 60px;
+  }
+  .footer_logo_menu .footer_logo{
+    width: 200px;
+  }
+  .footer_menu{
+    flex-direction: column;
+  }
+
+  .menu_box > li:last-child > a{
+    padding-left: 20px;
+    padding-right: 0;
+  }
+
+  .footer_menu .icon-menu{
+    align-self: flex-end;
+  }
+
+  /* 푸터 끝 */
+  /* 스크롤탑 버튼 */
+  .up_btn {
+    bottom:20px;
+    left:50%;
+  }
+
+  /* 토글메뉴 */
+  .toggle_btn{
+    display: block;
+  }
+
+  .toggle_wrap.active,
+  .toggle_menu.active,
+  .toggle_icons.active{
+    display: flex;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .up_btn{
+    bottom: 300px;
+    left: 90%;
+  }
+  /* 토글메뉴 */
+ 
+
+  .toggle_wrap > .toggle_menu{
+    font-size: var(--text-xl);
+  }
+  .toggle_wrap > .toggle_icons{
+    font-size: var(--text-xl);
+    padding: 10px 0;
+  }
+
+  /* 메인배너슬라이드 */
+  .slider-wrap .banner .text-box .banner_title{
+    width: 80%;
+    font-size: 35px;
+  }
+
+  .slider-wrap .banner .text-box .banner_body{  
+    display: none;
+  }
+  .slider-wrap .banner .text-box .banner_btn{
+    margin-top: 10px;
+  }
+  
+  /* 브랜드 */
+  .brands .brands__items .title{
+    font-size: 40px;
+    line-height:45px;
+    padding: 0 10px;
+  }
+  /* 캠페인 */
+  .slides-wrap .content .text-box .title{
+    font-size: 30px;
+    line-height: 35px;
+    text-shadow: 0 2px 4px rgba(0,0,0,.2);
+  }
+  /* 비즈니스 */
+  .business_contents{
+    margin-top: 140px;
+  }
+  .business_contents .content-wrap{
+    padding: 0 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* 푸터 */
+  .footer_img img{
+    max-width:470px;
+  } 
+  .footer_logo_menu{
+    right:30px;
+    bottom: 30px;
+  }
+  .menu_box{
+    flex-direction: column;
+    text-align: end;
+  }
+  .menu_box > li:not(:last-child) > a::after{
+    display: none;
+  }
+  .menu_box > li > a {
+    padding: 0;
+    margin: 5px 0;
+  }
+  .menu_box > li:last-child > a{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer_logo_menu > .footer_logo{
+    order: 4;
+    margin: 10px 0;
+  }
+  .footer_logo_menu > span{
+    order: 5;
+  }
+
+}
