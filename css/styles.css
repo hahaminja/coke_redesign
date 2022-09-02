@@ -74,14 +74,16 @@ body::-webkit-scrollbar-track {
 
 
 /* top_bar */
+
 .top_bar {
   background-color: var(--red-color);
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   position: relative;
+  /* overflow: hidden; */
 }
 .top_menu_box {
   color: var(--white-color);
@@ -118,9 +120,10 @@ body::-webkit-scrollbar-track {
 
 /* 서브메뉴 */
 .top_menu_box ul > li .sub_menu{
-  background-color:rgba(255,255,255,0.9);
+  /* background-color:rgba(255,255,255,0.9); */
+  background-color: rgb(176, 239, 243);
   width: 100%;
-  padding: 0 10px;
+  position: absolute;
 }
 .top_menu_box ul > li > div{
   position: absolute;

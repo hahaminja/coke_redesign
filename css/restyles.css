@@ -9,9 +9,13 @@
 }
 
 @media screen and (max-width:1024px) {
+  .top_bar{
+    min-width:0;
+  }
   .top_menu_box{
     padding: 0 20px;
   }
+
   /* 서브메뉴 시작 */
   /* .sub_menu .con{
     width: 90%;
@@ -246,8 +250,11 @@
   }
   /* 푸터 */
   .footer_img img{
-    max-width:470px;
+    max-width:480px;
   } 
+  .footer_inner{
+    height: 350px;
+  }
   .footer_logo_menu{
     right:30px;
     bottom: 30px;
