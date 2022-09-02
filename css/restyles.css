@@ -169,6 +169,9 @@
   .footer_menu .icon-menu{
     align-self: flex-end;
   }
+  .custom-shape-divider-top-1659268948 svg {
+    height: 110px;
+  }
 
   /* 푸터 끝 */
   /* 스크롤탑 버튼 */
@@ -189,15 +192,15 @@
   }
 }
 
-
 @media screen and (max-width:768px) {
   .up_btn{
     bottom: 300px;
     left: 90%;
   }
   /* 토글메뉴 */
- 
-
+  .toggle_wrap {
+    height: 100vh;
+  }
   .toggle_wrap > .toggle_menu{
     font-size: var(--text-xl);
   }
