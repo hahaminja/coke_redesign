@@ -3,7 +3,7 @@
   .slider-wrap .banner .text-box{
     width: 60%;
     top: 50%;
-    left:10%;
+    left:40px;
     transform: translateY(-60%);
   }
 }
@@ -69,7 +69,7 @@
     margin-bottom: 20px;
     font-weight: 800;
   }
-  .slider-wrap .banner:nth-child(4) .text-box .banner_body{
+  .slider-wrap .banner_3 .text-box .banner_body{
     width: 45%;
   }
   /* 메인배너슬라이드 끝 */
@@ -132,12 +132,14 @@
     font-size: 10px;
   }
   /* 캠페인 끝 */
+
+
   /* 비즈니스 시작 */
   .business_wrap{
     margin-top: 170px;
   }
   .business_contents .content-wrap{
-    padding: 0 15px;
+    padding: 0 20px;
     gap: 10px;
   }
   /* 비즈니스 끝 */
@@ -212,8 +214,18 @@
     font-size: var(--text-xl);
     padding: 10px 0;
   }
-
   /* 메인배너슬라이드 */
+  .slider-wrap{
+    height: 400px;
+  }
+  .slider-wrap .img-box{
+    height: 400px;
+  }
+  .slider-wrap .img-box img{
+    height: 100%;
+    object-fit:cover;
+  }
+
   .slider-wrap .banner .text-box .banner_title{
     width: 80%;
     font-size: 35px;
@@ -248,6 +260,16 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  /* 에디션 */
+
+  .edition_wrap .contents{
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  }
+
+
   /* 푸터 */
   .footer_img img{
     max-width:480px;
@@ -283,4 +305,143 @@
     order: 5;
   }
 
+}
+@media screen and (max-width:540px) {
+ /* 스크롤탑 버튼 */
+  .up_btn {
+    display: none;
+  }
+  .slider-wrap{
+    height: 600px;
+  }
+  .slider-wrap .img-box{
+    height: 600px;
+  }
+  .slider-wrap .banner_1 .img-box{
+    background-color: #6c31cd;
+  }
+  .slider-wrap .banner_2 .img-box{
+    background-color: #5e94c0;
+  }
+  .slider-wrap .banner_3 .img-box{
+    background-color: #a43929;
+  }
+  .slider-wrap .banner_4 .img-box{
+    background-color: #f7c370;
+  }
+  .slider-wrap .img-box img{
+    height: 100%;
+    display: none;
+  }
+  .slider-wrap .banner .text-box{
+    width: 100%;
+    padding: 0 20px;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider-wrap .banner .text-box .banner_title{
+    width: 100%;
+    color: var(--white-color);
+    text-shadow:none;
+    margin-bottom: 30px;
+  }
+  .slider-wrap .banner .text-box .banner_body{
+    text-align: center;
+    color: var(--white-color);
+    display: block;
+    font-weight: normal;
+  }
+  .slider-wrap .banner:nth-child(4) .text-box .banner_body{
+    width: 100%;
+  }
+
+  .slider-wrap .banner_3 .text-box .banner_btn{
+    align-self: center;
+  }
+  /* 리스트 시작 */
+  .list_slide_wrap .content{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:justify-between;
+  }
+  .list_slide_wrap .content .img-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .list_slide_wrap .content .img-box img{
+    width: 80%;
+  }
+  .list_slide_wrap .content .text-box{
+    margin-top: 40px;
+  }
+  .list_slide_wrap .content .text-box h2{
+    font-size: 25px;
+  }
+  .list_slide_wrap .content .text-box .price_shopNow span{
+    font-size: 15px;
+  }
+
+  .list_slide_wrap .content .text-box .price_shopNow{
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+  .list_slide_wrap .content .text-box .price_shopNow span{
+    font-size: var(--text-md);
+    color:var(--gray-color);
+    font-weight: 500;
+  }
+  .list_slide_wrap .content .text-box .price_shopNow p{
+    display: inline-block;
+    font-size: var(--text-sx);
+    color:var(--red-color);
+    border: 1.8px solid var(--red-color);
+    padding:4px 10px;
+    border-radius: 7px;
+    transition: 0.3s;
+  }
+
+  /* 리스트 끝 */
+  .brands{
+    display: none;
+  }
+  /* 캠페인배너 */
+  .business_wrap > .banner_title{
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .campaign_banner .slides-wrap{
+    height: 500px;
+  }
+  .campaign_banner .slides-wrap .img-box{
+    height: 500px;
+  }
+  .campaign_banner .slides-wrap .img-box img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .campaign_banner .slides-wrap .bear .text-box{
+  top: 130px;
+}
+.campaign_banner .slides-wrap .bear .text-box .title{
+  line-height: 30px;
+  }
+  /* 캠페인배너 끝 */
+
+  .business_contents .content-wrap .content{
+    width: 70%;
+    margin-top: 30px;
+  }
+  
+  /* 푸터 */
+  .footer_img img{
+    display: none;
+  }
+  .footer_logo_menu span{
+    text-align: end;
+  }
 }
