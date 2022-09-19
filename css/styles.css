@@ -249,7 +249,7 @@ body::-webkit-scrollbar-track {
   position: relative;
 }
 
-.slider-wrap .banner .text-box{
+.slider-wrap .banner:not(:nth-child(4)) .text-box{
   position: absolute;
   top: 30%;
   left:300px;
@@ -267,7 +267,6 @@ body::-webkit-scrollbar-track {
   align-items: flex-end;
   top: 30%;
   right: 300px;
-  background-color: pink;
 }
 .slider-wrap .banner .text-box .banner_title{
   font-size: 46px;

@@ -1,9 +1,15 @@
 
 @media screen and (min-width:1025px) and (max-width:1500px){
-  .slider-wrap .banner .text-box{
+  .slider-wrap .banner:not(:nth-child(4)) .text-box{
     width: 60%;
     top: 50%;
     left:40px;
+    transform: translateY(-60%);
+  }
+  .slider-wrap .banner_3 .text-box{
+    width: 60%;
+    top: 60%;
+    right:40px;
     transform: translateY(-60%);
   }
 }
@@ -40,15 +46,15 @@
     font-size: 13px;
   }
   /* 메인배너슬라이드 */
-  .slider-wrap .banner .text-box{
+  .slider-wrap .banner:not(:nth-child(4)) .text-box{
+    left:20px;
     top: 50%;
-    left:5%;
     transform: translateY(-60%);
   }
 
-  .slider-wrap .banner:nth-child(4) .text-box{
+  .slider-wrap .banner_3 .text-box{
     top: 50%;
-    right:5%;
+    right:20px;
     transform: translateY(-60%);
   }
   
@@ -64,13 +70,12 @@
   }
 
   .slider-wrap .banner .text-box .banner_body{
-    width: 80%;
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: 800;
   }
   .slider-wrap .banner_3 .text-box .banner_body{
-    width: 45%;
+    width: 80%;
   }
   /* 메인배너슬라이드 끝 */
   .arrival_list{
@@ -333,8 +338,18 @@
     height: 100%;
     display: none;
   }
+
+  .slider-wrap .banner_3 .text-box{
+    right:0px;
+  }
+  .slider-wrap .banner:not(:nth-child(4)) .text-box{
+    left:0px;
+  }
+  .slider-wrap .banner_2 .text-box{
+    left:0;
+    right: 0;
+  }
   .slider-wrap .banner .text-box{
-    width: 100%;
     padding: 0 20px;
     left: 0;
     text-align: center;

@@ -39,7 +39,7 @@ $(window).scroll(function(){
 // 서브메뉴 엑티브 끝
 // 메인배너슬라이드 슬릭
   $(".slider-wrap").slick({
-    autoplay : false ,
+    autoplay : true ,
     autoplaySpeed : 3000 ,
     dots: true,
     arrows : false,
@@ -92,7 +92,7 @@ $(window).scroll(function(){
 // 캠페인 배너 슬라이드
   $(".slides-wrap").slick({
     dots:true,
-    autoplay:false,
+    autoplay:true,
     autoplaySpeed : 3000,
     arrows:false,
     pauseOnHover: false,
