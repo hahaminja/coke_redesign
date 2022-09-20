@@ -45,6 +45,14 @@ $(window).scroll(function(){
     arrows : false,
     pauseOnHover: false,
     pauseOnFocus: false,
+    responsive: [ // 반응형 웹 구현
+      {
+        breakpoint:540,
+        settings:{
+          autoplaySpeed : 5000 ,
+        }
+      }
+    ]
   });
 
   // 메인배너슬라이드 글씨 올라오기

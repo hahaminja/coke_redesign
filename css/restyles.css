@@ -312,6 +312,9 @@
 
 }
 @media screen and (max-width:540px) {
+  .top_menu_box {
+    height: 80px;
+  }
  /* 스크롤탑 버튼 */
   .up_btn {
     display: none;
@@ -377,6 +380,12 @@
     align-self: center;
   }
   /* 리스트 시작 */
+  .arrival_list{
+    margin-top: 120px;
+  }
+  .list_slide_wrap {
+    margin-top: 100px;
+  }
   .list_slide_wrap .content{
     padding: 0 50px;
     display: flex;
@@ -424,10 +433,10 @@
   .brands{
     display: none;
   }
+  
   /* 캠페인배너 */
-  .business_wrap > .banner_title{
-    font-size: 55px;
-    line-height: 55px;
+  .campaign_banner{
+    margin-top: 100px;
   }
   .campaign_banner .slides-wrap{
     height: 500px;
@@ -447,11 +456,33 @@
   }
   /* 캠페인배너 끝 */
 
-  .business_contents .content-wrap .content{
-    width: 70%;
-    margin-top: 30px;
+  /* 비즈니스 시작 */
+  .business_wrap{
+    margin-top: 120px;
   }
-  
+  .business_wrap > .banner_title{
+    font-size: 52px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+  }
+  .business_contents .content-wrap {
+    margin-top: 100px;
+  }
+  .business_contents .content-wrap .content{
+    width: 90%;
+    margin-top: 10px;
+  }
+  /* 비즈니스 끝 */
+  /* 에디션 시작*/
+  .edition_wrap{
+    margin-top: 120px;
+  }
+  .edition_wrap .contents-wrap{
+    margin-top: -50px;
+  }
+  /* 에디션 끝 */
+
   /* 푸터 */
   .footer_img img{
     display: none;
