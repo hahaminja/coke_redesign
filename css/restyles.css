@@ -466,12 +466,12 @@
     padding: 0;
     text-align: center;
   }
-  .business_contents .content-wrap {
+  .business_contents {
     margin-top: 100px;
-  }
+}
   .business_contents .content-wrap .content{
-    width: 90%;
-    margin-top: 10px;
+    width: 75%;
+    margin-top: 15px;
   }
   /* 비즈니스 끝 */
   /* 에디션 시작*/
