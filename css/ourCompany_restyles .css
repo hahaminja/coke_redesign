@@ -1,0 +1,63 @@
+
+@media screen and (min-width:1025px) and (max-width:1500px){
+  .slider-wrap .banner:not(:nth-child(4)) .text-box{
+    width: 60%;
+    top: 50%;
+    left:40px;
+    transform: translateY(-60%);
+  }
+  .slider-wrap .banner_3 .text-box{
+    width: 60%;
+    top: 60%;
+    right:40px;
+    transform: translateY(-60%);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .our_title{
+    font-size: 75px;
+    line-height: 90px;
+    text-shadow: 0 5px 7px rgb(0 0 0 / 20%);
+  }
+  .company_wrap .section{
+    margin-top: 150px;
+  }
+  .sec_content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  .sec_content .content_txt {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .section.sec02 .content_txt,
+  .section.sec04 .content_txt {
+    text-align: center;
+  }
+  .section.sec02 .content_img, .section.sec04 .content_img {
+    order: 0;
+  }
+  .company_copy .cw_wrap {
+    margin-top: 100px;
+}
+  .company_copy .cw_wrap .cw_title {
+    font-size: 70px;
+  }
+
+}
+@media screen and (max-width:768px) {
+  
+
+}
+@media screen and (max-width:540px) {
+  .company_wrap .section{
+    margin-top: 10px;
+  }
+  .sec_content .content_txt .content_body{
+    padding: 0 20px;
+  }
+}
